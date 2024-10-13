@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="sm:w-5/6 mx-auto flex flex-col sm:flex-row gap-5 mt-4">
-      <div className="w-3/5 px-3 py-8 bg-[#1B1B1B] border border-[#262626] rounded-lg">
+      <div className="sm:w-3/5 px-3 py-8 bg-[#1B1B1B] border border-[#262626] rounded-lg">
         <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-10">
           <div>
             <h4 className="text-[#949393] text-lg">{aboutData.occupation}</h4>
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-2/5 px-3 py-8 bg-[#1B1B1B] border border-[#262626] rounded-lg">
+      <div className="sm:w-2/5 px-3 py-8 bg-[#1B1B1B] border border-[#262626] rounded-lg">
         <h4 className="font-semibold uppercase text-2xl">Skils</h4>
         <div className="">
           {skillsData.map(({ skill, level }) => (
