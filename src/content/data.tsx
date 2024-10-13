@@ -13,47 +13,47 @@ export const about = () => {
     }
 }
 
-export const skils = () => { 
+export const skills = () => {
     return [
         {
             skill: 'Php/Laravel',
-            level: '80%'
+            level: 80
         },
         {
             skill: 'Node.js',
-            level: '75%'
+            level: 75
         },
         {
             skill: 'Adonis.js',
-            level: '75%'
+            level: 75
         },
         {
             skill: 'JavaScript',
-            level: '90%'
+            level: 90
         },
         {
             skill: 'TypeScript',
-            level: '80%'
+            level: 80
         },
         {
             skill: 'Next.js',
-            level: '45%'
+            level: 45
         },
         {
             skill: 'css',
-            level: '65%'
+            level: 65
         },
         {
             skill: 'PostgreSQL',
-            level: '70%'
+            level: 70
         },
         {
             skill: 'MYSQL',
-            level: '70%'
+            level: 70
         },
         {
             skill: 'Redis',
-            level: '60%'
+            level: 60
         }
     ]
 }

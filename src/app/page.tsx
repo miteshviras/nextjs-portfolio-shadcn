@@ -1,16 +1,18 @@
 import { Button } from "@/components/ui/button";
-import { about } from "@/content/data";
+import { about, skills } from "@/content/data";
 import { CopyIcon } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-
+import { Progress } from "@/components/ui/progress"
 
 
 export default function Home() {
   const aboutData = about();
+  const skillsData = skills();
+
   return (
     <div className="sm:w-5/6 mx-auto flex flex-col sm:flex-row gap-5 mt-4">
       <div className="w-3/5 px-3 py-8 bg-[#1B1B1B] border border-[#262626] rounded-lg">
-        <div className="flex flex-col-reverse sm:flex-row justify-center gap-10">
+        <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-10">
           <div>
             <h4 className="text-[#949393] text-lg">{aboutData.occupation}</h4>
 
@@ -35,7 +37,15 @@ export default function Home() {
         </div>
       </div>
       <div className="w-2/5 px-3 py-8 bg-[#1B1B1B] border border-[#262626] rounded-lg">
-        <h4 className="text-orange-500 font-semibold uppercase text-2xl">Skils</h4>
+        <h4 className="font-semibold uppercase text-2xl">Skils</h4>
+        <div className="">
+          {skillsData.map(({ skill, level }) => (
+            <div key={skill} className="flex gap-x-2">
+              <label htmlFor="">{skill}</label>
+              <Progress key={`skill-${skill}`} className="mt-2" value={level} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
