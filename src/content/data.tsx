@@ -4,7 +4,7 @@ export const about = () => {
 
     return {
         title: `I'm ${firstName} ${lastName}`,
-        subTitle: "I do code and make content about it!",
+        subTitle: "Hello, I'm Mitesh Viras, a web developer with a specialization in backend development. My expertise lies in programming languages such as PHP and Node.js. I'm passionate about crafting robust and efficient solutions to enhance the functionality and performance of web applications. Let's build something extraordinary together!",
         firstName: firstName,
         lastName: lastName,
         email: 'virashmitesh@gmail.com',
