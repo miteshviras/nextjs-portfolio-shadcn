@@ -40,8 +40,16 @@ export const skills = () => {
             level: 45
         },
         {
-            skill: 'css',
+            skill: 'CSS',
             level: 65
+        },
+        {
+            skill: 'Tailwind CSS',
+            level: 75
+        },
+        {
+            skill: 'Bootstrap',
+            level: 70
         },
         {
             skill: 'PostgreSQL',
@@ -53,6 +61,10 @@ export const skills = () => {
         },
         {
             skill: 'Redis',
+            level: 60
+        },
+         {
+            skill: 'Git',
             level: 60
         }
     ]
