@@ -44,7 +44,7 @@ export const skills = () => {
             level: 65
         },
         {
-            skill: 'Tailwind CSS',
+            skill: 'Tailwind',
             level: 75
         },
         {
