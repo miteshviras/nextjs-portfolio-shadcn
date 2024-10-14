@@ -3,13 +3,19 @@
 import React from "react";
 import { Button } from "@/components/ui/button"; // Assuming you're using ShadCN Button
 import { CopyIcon } from "lucide-react";
+import { useToast } from "@/hooks/use-toast"
+
 
 export const ContactButtonsComponent = ({ email }: { email: string }) => {
+    const { toast } = useToast(); // Use the toast hook
 
     // Function to copy email to clipboard
     const copyToClipboard = () => {
         navigator.clipboard.writeText(email).then(() => {
-            alert("Email copied to clipboard!"); // You can replace this with a toast notification if needed
+            // Trigger the toast notification after copying
+            toast({
+                description: "Email copied to clipboard!",
+            });
         });
     };
 
