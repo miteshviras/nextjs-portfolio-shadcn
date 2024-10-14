@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white my-3 mx-4 md:mx-0 `}
       >
-        <NavbarComponent />
+        {/* <NavbarComponent /> */}
         {children}
       </body>
     </html>

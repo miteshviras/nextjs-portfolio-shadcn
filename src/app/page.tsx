@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
+
 import { about, skills } from "@/content/data";
-import { CopyIcon } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import React from "react";
 import ProgressComponent from "@/components/progress-component";
+import ContactButtonsComponent from "@/components/contact-buttons-component";
+
 
 
 
@@ -26,11 +27,8 @@ export default function Home() {
                 <p className="pt-3">{aboutData.subTitle}</p>
               </div>
 
-              <div className="flex gap-2 mt-2 ">
-                <Button className="text-lg">Hire Me</Button>
-                <Button variant="outline" className="flex gap-2 text-xs">
-                  Copy Email <CopyIcon className="h-4 w-4" />
-                </Button>
+              <div className="mt-2">
+                <ContactButtonsComponent email={aboutData.email} />
               </div>
             </div>
             <div className="flex items-center">
