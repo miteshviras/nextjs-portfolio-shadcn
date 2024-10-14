@@ -9,7 +9,7 @@ export const about = () => {
         lastName: lastName,
         email: 'virashmitesh@gmail.com',
         occupation: 'Backend Developer',
-        profileImageUrl: 'https://avatars.githubusercontent.com/u/87187589?s=400&u=49263c787eb53783a81b9ab29c0b00dbcb12de1f&v=4'
+        profileImageUrl: 'https://res.cloudinary.com/daily-now/image/upload/s--JMr71Q_F--/f_auto/v1728468703/avatars/avatar_fOZFEX577GdyIORiTMpYr'
     }
 }
 
