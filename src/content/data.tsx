@@ -63,9 +63,30 @@ export const skills = () => {
             skill: 'Redis',
             level: 60
         },
-         {
+        {
             skill: 'Git',
             level: 60
+        }
+    ]
+}
+
+export const socialMedia = () => { 
+    return [
+        {
+            name: 'Github',
+            url: 'https://github.com/miteshviras'
+        },
+        {
+            name: 'LinkedIn',
+            url: 'https://www.linkedin.com/in/mitesh-viras/'
+        },
+        {
+            name: 'X',
+            url: 'https://x.com/mitesh_viras'
+        },
+        {
+            name: 'Instagram',
+            url: 'https://www.instagram.com/miteshviras329/'
         }
     ]
 }
